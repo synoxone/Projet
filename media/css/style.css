@@ -1,0 +1,462 @@
+/******* Body *******/
+body {
+    
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+    font-size: 16px;
+	background-color: #E8E8E8;
+    
+}
+/******* #Site *******/
+#site {
+    
+    width: 1000px;
+    background: #fff;
+	padding: 20px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"header"
+		"article"
+		"footer";
+    
+}
+i {
+    
+    color: gray;
+    
+}
+a:link, a:visited {
+    
+    color: black;
+	text-decoration: none;
+    
+}
+a:hover {
+    
+	text-decoration: underline;
+    
+}
+ul {
+    
+    margin: 0;
+	padding:0;
+    
+}
+ul li {
+
+    list-style: none;
+    
+}
+.erreur {
+    
+	color: red;
+    font-weight: bold;
+    
+}
+.validation {
+    
+	color: limegreen;
+    font-weight: bold;
+    
+}
+.champ {
+    
+    text-align: center;
+    border-radius: 5px;
+    width: 300px;
+	height: 40px;
+	border: 1px solid #c3c3c3;
+    font-size: 17px;
+    
+}
+.champ:hover {
+    
+	border: 1px solid #000;
+    
+}
+.submit {
+    
+    font-size: 17px;
+    border-radius: 5px;
+    width: 300px;
+	height: 40px;
+	cursor: pointer;
+	outline:none;
+    
+}
+.submit:hover {
+    
+    font-weight: bold;
+    background-color: burlywood;
+    
+}
+/******* Header *******/
+header {
+    
+    padding-bottom: 20px;
+    grid-area: header;
+    text-align: center;
+    display: flex;
+    
+}
+header h1 {
+    
+	width: 30%;
+    
+}
+header nav {
+    
+	width: 70%;
+    display: flex;
+	align-items: center;
+    justify-content: space-around;
+    
+}
+header nav ul {
+    
+    display: flex;
+    
+}
+header nav ul li {
+    
+    margin: 10px;
+	padding: 10px;
+    
+}
+/******* Article *******/
+article {
+    
+    grid-area: article;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+article form p {
+    
+    padding: 5px;
+    margin: 5px;
+    
+}
+article h1 {
+    
+    text-align: left;
+}
+/******* Accueil *******/
+.vitrine {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.vitrine p {
+    
+    margin: 0;
+    
+}
+.vitrine .photo {
+    
+    padding: 15px;
+    padding-bottom: 5px;
+    width: 300px;
+    height: 300px;
+    
+}
+/******* #Client *******/
+#client {
+    
+	display: flex;
+    
+}
+/******* Section *******/
+#client section {
+    
+	width: 30%;
+    padding-bottom: 20px;
+    
+}
+#client section ul li{
+    
+    margin-bottom: 10px;
+    
+}
+#client section ul li button{
+    
+    border: none;
+	cursor: pointer;
+	outline: none;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    font-size: 17px;
+    padding-left: 20px;
+    
+}
+#client section ul li button:hover {
+    
+    font-weight: bold;
+    background-color: burlywood;
+    
+}
+/******* Article *******/
+#client article {
+    
+	width: 70%;
+    padding-left: 40px;
+    text-align: left;
+    
+}
+/******* Adresse *******/
+.adresses {
+    
+    width: 700px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.adresses .adresse {
+    
+    width: 300px;
+    height: 350px;
+    border: solid 1px #E8E8E8;
+    padding: 10px;
+    font-size: 18px;
+}
+.adresses .adresse form {
+    
+    padding: 5px;
+}
+.adresses .adresse form .submit{
+    
+    width: 150px;
+}
+/******* Article *******/
+.article {
+    
+    display: flex;
+    
+}
+.article .details {
+    
+    padding-left: 20px;
+    text-align: left;
+    
+}
+/******* Panier *******/
+.panier {
+    
+    display: flex;
+    
+}
+.panier .photo {
+    
+    width: 190px;
+    height: 190px;
+    padding: 10px;
+    
+}
+.panier .articles {
+    
+    width: 50%;
+    border-top: solid 1px #E8E8E8;
+    border-left: solid 1px #E8E8E8;
+    border-right: solid 1px #E8E8E8;
+    
+}
+.panier .articles .article {
+    
+    border-bottom: solid 1px #E8E8E8;
+    
+}
+.panier .articles .article .button {
+    
+	cursor: pointer;
+	outline:none;
+    
+}
+.panier .articles .article .button:hover {
+    
+    background-color: burlywood;
+    
+}
+.panier .total {
+    
+    width: 50%;
+    height: 210px;
+    border: solid 1px #E8E8E8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.panier .total p {
+    
+    font-weight: bold;
+}
+/******* A.Supprimer *******/
+.supprimer .photo {
+    
+    width: 200px;
+    height: 200px;
+    
+}
+/******* Livraison *******/
+.livraison {
+    
+    text-align: left;
+    
+}
+.livraison .adresses {
+    
+    align-items: center;
+}
+/******* Paiement *******/
+.paiement {
+    
+    display: flex;
+    
+}
+.paiement .coordonnees {
+    
+    width: 50%;
+    
+}
+.paiement .details {
+    
+    width: 50%;
+    background-color: #E8E8E8;
+    padding: 20px;
+    
+}
+.paiement .details .panier {
+    
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    
+}
+.paiement .details .panier .photo {
+    
+    width: 50px;
+    height: 50px;
+    
+}
+/******* Footer *******/
+footer {
+    
+    width: 100%;
+    grid-area: footer;
+    background-color: #E8E8E8;
+    text-align: center;
+    
+}
+footer section {
+    
+    margin: 20px;
+    
+}
+footer section ul {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+footer section ul li {
+    
+    margin: 10px;
+    
+}
+/******* Responsive *******/
+@media screen and (max-width: 1000px) {
+    #site {
+        
+        width: 90%;
+    }
+    header {
+        
+        display: block;
+        
+    }
+    header h1 {
+        
+        width: 100%;
+        
+    }
+    header nav {
+        
+        width: 100%;
+        
+    }
+    header nav ul {
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .champ {
+        
+        width: 80%;
+
+    }
+    .submit {
+        
+        width: 80%;
+
+    }
+    .adresses {
+
+        width: 80%;
+        height: auto;
+        display: block;
+
+    }
+    .adresses .adresse {
+
+        width: 100%;
+    }
+    .article {
+
+        display: block;
+
+    }
+    .article .details {
+
+        padding-left: 0;
+        text-align: center;
+
+    }
+    .paiement {
+
+        display: block;
+
+    }
+    .paiement .coordonnees {
+
+        width: 90%;
+
+    }
+    .paiement .details {
+
+        width: 90%;
+
+    }
+    .paiement .details .panier {
+
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #000;
+
+    }
+    .paiement .details .panier .photo {
+
+        width: 50px;
+        height: 50px;
+
+    }
+}
