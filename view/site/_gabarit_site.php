@@ -6,7 +6,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'/>
         <meta name='description' content='<?= $description ?>'/>
         <meta name='keywords' content='<?= $keywords ?>'/>
-        <link rel='stylesheet' href='media/css/style.css'/>
+        <link rel='stylesheet' href='<?= MEDIA; ?>/css/style.css'/>
     </head>
 
     <body>
@@ -51,8 +51,8 @@
                 </section>
                 <p>&copy; 2020 - Marque</p>
             </footer>
-            <script src='media/jquery/jquery-3.5.1.min.js'></script>
-            <script src='media/jquery/controle-formulaire.js'></script>
+            <script src='<?= MEDIA; ?>/jquery/jquery-3.5.1.min.js'></script>
+            <script src='<?= MEDIA; ?>/jquery/controle-formulaire.js'></script>
         </div>
     </body>
 </html>

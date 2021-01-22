@@ -52,7 +52,7 @@ class StockManager {
     
     /////*** Connexion à la BDD ***/////
     private function connexion() {
-        $cnx = new PDO('mysql:host=localhost;dbname=ecommerce;charset=utf8', 'root', '');
+        $cnx = new PDO('mysql:host='.HOST.';dbname='.DBNAME.';charset=utf8', ''.CNX_LOGIN.'', ''.CNX_PASS.'');
         return $cnx;
     }
 }
